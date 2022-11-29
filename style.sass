@@ -3,7 +3,10 @@
     box-sizing: border-box
     font-family: 'Roboto', sans-serif
     position: relative
+    margin: 0
+
 $colorgrey: #c6c6c6
+$colorlight: #f8f8f8
 
 @mixin flexCenter
     display: flex
@@ -16,7 +19,7 @@ $colorgrey: #c6c6c6
 body,html
     margin: 0
     padding: 0
-    background-color: #888
+    background-color: $colorgrey
     font-size: 15px
     position: absolute
     width: 100%
@@ -68,3 +71,23 @@ header
         .your_channel
             +size(36px)
             border-radius: 50%
+
+.mainbody
+    display: flex
+    height: calc(100vh - 70px)
+    .sidebar
+        background-color: $colorlight
+        width: 230px
+        .active
+            background-color: darken($colorgrey,0.1)
+            &:hover
+                background-color: darken($colorgrey,5)
+    .sidebar_category
+        +flexCenter
+        cursor: pointer
+        padding: 15px 20px
+        span
+            font-size: 0.9rem
+            padding-left: 20px
+        &:hover
+            background-color: darken($colorlight,5)

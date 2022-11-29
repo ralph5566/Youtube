@@ -1,0 +1,45 @@
+doctype html
+html(lang="zh-Hant")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+       header.nav
+            .header_left
+                a(href='#')
+                    img.header_menu(src='img/menu.svg' alt='')
+                a(href='#')
+                    img.youtube_logo(src='img/youtube-logo.png' alt='Youtube Logo')
+            form.search_bar(action='')
+                input.search_input(type='search' placeholder='搜索')
+                button.search_btn(type='submit')
+                    img(src='img/search.svg' alt='Search')
+                a.search_voice(href='')
+                    img(src='img/keyboard_voice.svg' alt='Voice over')
+            form.search-bar(action='')
+                .menu_icons
+                    a(href='#')
+                        img(src='img/video_call.svg' alt='Upload Video')
+                    a(href='#')
+                        img(src='img/apps.svg' alt='Apps')
+                    a(href='#')
+                        img(src='img/notifications.svg' alt='Notifications')
+                    a(href='#')
+                        img.your_channel(src='img/your_channel_icon.jpg' alt='Your channel')
+        .mainbody
+            section.sidebar
+                .sidebar_categories
+                    .sidebar_category.active
+                        img.home_icon(src='img/home.svg' alt='Home')
+                        span.sidebar_font
+                    .sidebar_category
+                        img.explore_icon(src='img/explore.svg' alt='Explore')
+                        span.sidebar_font 
+                    .sidebar_category
+                        img.subscrip_icon(src='img/subscriptions.svg' alt='')
+                        span.sidebar_font
+                    .sidebar_category
+                        img.library_icon(src='img/video_library.svg' alt='')
+                        span.sidebar_font 
