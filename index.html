@@ -1,59 +1,111 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <title>Document</title>
-</head>
-
-<body>
-  <header class="nav">
-    <div class="header_left">
-      <a href="#"><img src="img/menu.svg" alt="" class="header_menu" /></a>
-      <a href="#"><img src="img/youtube-logo.png" alt="Youtube Logo" class="youtube_logo" /></a>
-    </div>
-    <form action="" class="search_bar">
-      <input type="search" class="search_input" placeholder="搜索" />
-      <button type="submit" class="search_btn">
-        <img src="img/search.svg" alt="Search" />
-      </button>
-      <a href="" class="search_voice">
-        <img src="img/keyboard_voice.svg" alt="Voice over" /></a>
-    </form>
-    <form action="" class="search-bar"></form>
-    <div class="menu_icons">
-      <a href="#"><img src="img/video_call.svg" alt="Upload Video" /></a>
-      <a href="#"><img src="img/apps.svg" alt="Apps" /></a>
-      <a href="#"><img src="img/notifications.svg" alt="Notifications" /></a>
-      <a href=""><img src="img/your_channel_icon.jpg" alt="Your channel" class="your_channel" /></a>
-    </div>
-  </header>
-  <div class="mainbody">
-    <section class="sidebar">
-      <div class="sidebar_categories">
-        <div class="sidebar_category active">
-          <img src="img/home.svg" alt="Home" class="home_icon" /><span class="sidebar_font">首頁</span>
-        </div>
-        <div class="sidebar_category">
-          <img src="img/explore.svg" alt="Explore" class="explore_icon" /><span class="sidebar_font">探索</span>
-        </div>
-        <div class="sidebar_category">
-          <img src="img/subscriptions.svg" alt="" class="subscrip_icon" /><span class="sidebar_font">訂閱內容</span>
-        </div>
-        <div class="sidebar_category">
-          <img src="img/video_library.svg" alt="" class="library_icon" /><span class="sidebar_font">媒體庫</span>
-        </div>
+  <body>
+    <header class="nav">
+      <div class="header_left">
+        <a href="#"><img src="img/menu.svg" alt="" class="header_menu" /></a>
+        <a href="#"
+          ><img
+            src="img/youtube-logo.png"
+            alt="Youtube Logo"
+            class="youtube_logo"
+        /></a>
       </div>
-    </section>
-    <section class="video"></section>
-  </div>
-</body>
-
+      <form action="" class="search_bar">
+        <input type="search" class="search_input" placeholder="搜索" />
+        <button type="submit" class="search_btn">
+          <img src="img/search.svg" alt="Search" />
+        </button>
+        <a href="" class="search_voice">
+          <img src="img/keyboard_voice.svg" alt="Voice over"
+        /></a>
+      </form>
+      <form action="" class="search-bar"></form>
+      <div class="menu_icons">
+        <a href="#"><img src="img/video_call.svg" alt="Upload Video" /></a>
+        <a href="#"><img src="img/apps.svg" alt="Apps" /></a>
+        <a href="#"><img src="img/notifications.svg" alt="Notifications" /></a>
+        <a href=""
+          ><img
+            src="img/your_channel_icon.jpg"
+            alt="Your channel"
+            class="your_channel"
+        /></a>
+      </div>
+    </header>
+    <div class="mainbody">
+      <section class="sidebar">
+        <div class="sidebar_categories">
+          <div class="sidebar_category active">
+            <img src="img/home.svg" alt="Home" class="home_icon" /><span
+              class="sidebar_font"
+              >首頁</span
+            >
+          </div>
+          <div class="sidebar_category">
+            <img
+              src="img/explore.svg"
+              alt="Explore"
+              class="explore_icon"
+            /><span class="sidebar_font">探索</span>
+          </div>
+          <div class="sidebar_category">
+            <img
+              src="img/subscriptions.svg"
+              alt=""
+              class="subscrip_icon"
+            /><span class="sidebar_font">訂閱內容</span>
+          </div>
+          <div class="sidebar_category">
+            <img src="img/video_library.svg" alt="" class="library_icon" /><span
+              class="sidebar_font"
+              >媒體庫</span
+            >
+          </div>
+        </div>
+      </section>
+      <section class="video">
+        <section class="video_section">
+          <article class="video_container">
+            <a href="#" class="thumbnail" data-duration="22:30">
+              <img
+                src="img/video_thumbnail.jpg"
+                alt="Video thumbnail"
+                class="thumbnail_img"
+              />
+            </a>
+            <div class="video_description">
+              <a href=""
+                ><img
+                  src="img/channel-icon.jpg"
+                  alt="Channel icon"
+                  class="chsnnel_icon"
+              /></a>
+              <div class="video_details">
+                <a href="#" class="video_title">影片名稱</a
+                ><a href="#" class="video_channel_name">頻道名稱</a>
+                <div class="video_metadata">
+                  <span>10人觀看。</span><span>2小時前</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </section>
+    </div>
+  </body>
 </html>
