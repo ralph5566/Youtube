@@ -1,5 +1,4 @@
 *, *::after, *::before {
-  border: 1px solid #000;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   position: relative;
@@ -10,7 +9,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  background-color: #c6c6c6;
+  background-color: #fff;
   font-size: 15px;
   position: absolute;
   width: 100%;
@@ -21,37 +20,39 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 5px;
 }
 header .header_left {
   display: flex;
   align-items: center;
 }
 header .header_left .header_menu {
-  margin: 0 16px;
+  margin: 0 15px;
   width: 26px;
 }
 header .header_left .youtube_logo {
   width: 80px;
-  margin-left: 16px;
+  margin-left: 10px;
 }
 header .search_bar {
   display: flex;
-  margin: 0 4rem;
+  margin: 0 8rem;
   flex-grow: 1;
   justify-content: center;
 }
 header .search_bar input {
-  width: 50%;
+  width: 45%;
   font-size: 1rem;
-  padding: 0.6em;
+  padding: 0px 10px;
   border: 1px solid #c6c6c6;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  border-radius: 50px 0 0 50px;
 }
 header .search_bar .search_btn {
-  padding: 0 1.25em;
+  padding: 3px 1rem;
   border: 1px solid #c6c6c6;
+  border-radius: 0 50px 50px 0;
   background-color: #f8f8f8;
   border-left: none;
   cursor: pointer;
@@ -75,6 +76,11 @@ header .menu_icons {
 header .menu_icons img {
   width: 26px;
 }
+header .menu_icons img:hover {
+  background-color: #eee;
+  border-radius: 5px;
+  padding: -5px;
+}
 header .menu_icons .your_channel {
   width: 36px;
   height: 36px;
@@ -84,23 +90,27 @@ header .menu_icons .your_channel {
 
 .mainbody {
   display: flex;
-  height: calc(100vh - 70px);
+  height: calc(100% - 70px);
 }
 .mainbody .sidebar {
   background-color: #f8f8f8;
   width: 230px;
 }
 .mainbody .sidebar .active {
-  background-color: #c6c6c6;
+  background-color: #ececec;
+  border-radius: 10px;
+  margin: 0 8px;
+  margin-top: 10px;
 }
 .mainbody .sidebar .active:hover {
-  background-color: #b9b9b9;
+  background-color: #c3c3c3;
 }
 .mainbody .sidebar_category {
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: 15px 20px;
+  padding: 6px 10px;
+  margin: 0 8px;
 }
 .mainbody .sidebar_category span {
   font-size: 0.9rem;
@@ -108,16 +118,39 @@ header .menu_icons .your_channel {
 }
 .mainbody .sidebar_category:hover {
   background-color: #ebebeb;
+  border-radius: 10px;
 }
 .mainbody .video {
   width: 100%;
+  position: relative;
+  background-color: #f5f5f5;
+  padding-left: 70px;
+  padding-right: 50px;
 }
 .mainbody .video .video_section {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 3rem 1rem;
   margin: 0 1.5rem;
   padding: 3rem 0;
+  border-top: 4px solid #ddd;
+}
+.mainbody .video .video_section:first-child {
+  border: none;
+}
+.mainbody .video .video_section .video_section_title {
+  display: flex;
+  grid-column: 1/-1;
+  justify-content: space-between;
+  align-items: center;
+  margin: -1rem 0;
+  font-size: 1.5rem;
+}
+.mainbody .video .video_section .video_section_title .video_section_close {
+  border: none;
+  background-color: none;
+  cursor: pointer;
+  font-size: 1.5rem;
 }
 .mainbody .video .video_container {
   display: flex;
@@ -126,6 +159,7 @@ header .menu_icons .your_channel {
 .mainbody .video .video_container .thumbnail_img {
   width: 100%;
   height: 100%;
+  border-radius: 12px;
 }
 .mainbody .video .video_container .video_description {
   display: flex;
